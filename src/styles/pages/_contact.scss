@@ -19,9 +19,19 @@
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
   text-align: center;
 
+  .contact-profile {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    border: 3px solid contact.$color-primary;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
   h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: contact.$color-primary;
   }
 
@@ -31,40 +41,35 @@
     line-height: 1.6;
   }
 
+  .creator {
+    font-weight: 500;
+    color: contact.$color-primary;
+  }
+
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
 
-    input,
-    textarea {
-      padding: 0.9rem 1rem;
-      border: none;
-      border-radius: 0.7rem;
-      font-size: 1rem;
-      background: #222;
-      color: white;
-      resize: none;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+
+    a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.2s;
+      border-radius: 50%;
+      background: #fff;
+      padding: 4px;
     }
 
-    input:focus,
-    textarea:focus {
-      outline: 2px solid contact.$color-primary;
-    }
-
-    button {
-      background: contact.$color-primary;
-      color: white;
-      border: none;
-      border-radius: 2rem;
-      padding: 0.75rem 2rem;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background 0.2s;
-
-      &:hover {
-        background: darken(contact.$color-primary, 10%);
-      }
+    a:hover img {
+      transform: scale(1.1);
+      box-shadow: 0 2px 8px contact.$color-primary;
     }
   }
 }

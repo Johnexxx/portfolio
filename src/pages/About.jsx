@@ -12,8 +12,8 @@ const About = () => {
         </p>
         <ul className="about-list">
           <li>🌐 Frontend: React, HTML, CSS, JavaScript</li>
-          <li>🎨 UI/UX: Figma, Adobe XD</li>
-          <li>⚙️ Backend: Node.js, Express</li>
+          <li>🎨 UI/UX: Figma</li>
+          <li>⚙️ Backend: Node.js, PHP</li>
           <li>📚 Always learning and growing!</li>
         </ul>
       </div>
