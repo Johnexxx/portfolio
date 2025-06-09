@@ -1,0 +1,40 @@
+@use '../utils/variables' as hero;
+
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  background: hero.$color-black;
+  color: white;
+  padding: 0;
+
+  .hero-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-button {
+      background: hero.$color-primary;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+  }
+}
