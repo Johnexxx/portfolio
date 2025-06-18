@@ -1,6 +1,6 @@
 import React from "react";
 import "@/styles/pages/_projects.scss";
-import clucashLogo from "@/assets/CLUCASH LOGO.png";
+import clucashLogo from "@/assets/Clucash-Logo.png";
 
 const Projects = () => {
   return (

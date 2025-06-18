@@ -1,0 +1,52 @@
+@use "../utils/variables" as skills;
+
+.skills-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(120deg, #181c2f 0%, #232946 100%);
+}
+
+.meteor-shower-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.meteor {
+  position: absolute;
+  top: -80px;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(180deg, #fff 0%, #00cfff 100%);
+  opacity: 0.7;
+  border-radius: 2px;
+  filter: blur(0.5px);
+  animation: meteor-shoot 2.2s linear infinite;
+}
+
+@for $i from 1 through 12 {
+  .meteor#{$i} {
+    left: random(100) * 1%;
+    animation-delay: #{random(20) / 10}s;
+    animation-duration: #{1.8 + random(8) / 10}s;
+    opacity: #{0.5 + random(5) / 10};
+    height: #{60 + random(40)}px;
+    background: linear-gradient(180deg, #fff, #ebfa95, transparent);
+  }
+}
+
+@keyframes meteor-shoot {
+  0% {
+    transform: translateY(0) translateX(0) rotate(140deg);
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(40vw) rotate(140deg);
+    opacity: 0;
+  }
+}
