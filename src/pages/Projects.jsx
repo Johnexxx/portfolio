@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/pages/_projects.scss";
-import clucashLogo from "../assets/CLUCASH LOGO.png";
+import "@/styles/pages/_projects.scss";
+import clucashLogo from "@/assets/CLUCASH LOGO.png";
 
 const Projects = () => {
   return (
@@ -34,48 +34,6 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          {/* Project 2 
-          <div className="project-card">
-            <div className="project-header">
-              <div className="project-logo placeholder">🌐</div>
-              <h3>Responsive Website</h3>
-            </div>
-            <div className="project-info">
-              <p>
-                A responsive website designed in Figma and implemented with
-                HTML/CSS.
-              </p>
-              <a
-                href="#"
-                className="project-link"
-                tabIndex={-1}
-                aria-disabled="true"
-              >
-                Demo Coming Soon
-              </a>
-            </div>
-          </div>
-          {/* Project 3 
-          <div className="project-card">
-            <div className="project-header">
-              <div className="project-logo placeholder">🛒</div>
-              <h3>E-commerce Platform</h3>
-            </div>
-            <div className="project-info">
-              <p>
-                An e-commerce platform developed with PHP and MySQL.
-              </p>
-              <a
-                href="#"
-                className="project-link"
-                tabIndex={-1}
-                aria-disabled="true"
-              >
-                Demo Coming Soon
-              </a>
-            </div>
-          </div>
-          */}
         </div>
       </div>
     </section>

@@ -10,3 +10,17 @@
     padding: 0;
     font-family: $font-family-base;
 }
+
+body, html, #root {
+  background: #181818 !important;
+  min-height: 100vh;
+}
+
+#tsparticles {
+  position: fixed !important;
+  z-index: 0;
+  inset: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none;
+}

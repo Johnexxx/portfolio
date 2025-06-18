@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/pages/_contact.scss";
-import profile from "../assets/profile.jpg";
+import "@/styles/pages/_contact.scss";
+import profile from "@/assets/profile.jpg";
 
 const Contact = () => {
   return (

@@ -5,11 +5,11 @@ import './styles/main.scss'
 
 const App = () => {
   return (
-    <>
+    <div>
       <Router>
         <Approutes />
       </Router>
-    </>
+    </div>
   )
 }
 

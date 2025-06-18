@@ -1,19 +1,15 @@
 import React from "react";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <div>
+        <Outlet />
+      </div>
       <Footer />
     </>
   );

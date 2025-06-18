@@ -3,9 +3,10 @@
 .hero-container {
   min-height: 100vh;
   display: flex;
-  background: hero.$color-black;
   color: white;
   padding: 0;
+  position: relative;
+  overflow: hidden;
 
   .hero-main {
     flex: 1;
@@ -35,6 +36,71 @@
       cursor: pointer;
       text-decoration: none;
       transition: background 0.2s;
+    }
+  }
+
+  // Jumping balls background
+  .jump-balls-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    .ball {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: jump 2s ease-in-out infinite alternate;
+    }
+
+    .ball1 {
+      width: 60px;
+      height: 60px;
+      left: 10%;
+      bottom: 10%;
+      background: #6a82fb;
+      animation-delay: 0s;
+    }
+    .ball2 {
+      width: 40px;
+      height: 40px;
+      left: 30%;
+      bottom: 20%;
+      background: #fc5c7d;
+      animation-delay: 0.4s;
+    }
+    .ball3 {
+      width: 50px;
+      height: 50px;
+      left: 60%;
+      bottom: 15%;
+      background: #43cea2;
+      animation-delay: 0.8s;
+    }
+    .ball4 {
+      width: 35px;
+      height: 35px;
+      left: 80%;
+      bottom: 25%;
+      background: #185a9d;
+      animation-delay: 1.2s;
+    }
+    .ball5 {
+      width: 45px;
+      height: 45px;
+      left: 50%;
+      bottom: 5%;
+      background: #f7971e;
+      animation-delay: 1.6s;
+    }
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-80px) scale(1.1);
     }
   }
 }
