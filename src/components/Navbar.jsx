@@ -1,6 +1,7 @@
 import React from 'react';
-import '@/styles/pages/_navbar.scss';
+import '@/styles/components/_navbar.scss';
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle'; // <-- Import here
 
 const Navbar = () => {
   return (
@@ -9,10 +10,11 @@ const Navbar = () => {
         Portfolio
       </div>
       <div className="navbar-content">
-            <Link to="/" className="navbar-link">Home</Link>
-            <Link to="/about" className="navbar-link">About</Link>
-            <Link to="/projects" className="navbar-link">Projects</Link>
-            <Link to="/contact" className="navbar-link">Contact</Link>
+        <Link to="/" className="navbar-link">Home</Link>
+        <Link to="/about" className="navbar-link">About</Link>
+        <Link to="/projects" className="navbar-link">Projects</Link>
+        <Link to="/contact" className="navbar-link">Contact</Link>
+        <ThemeToggle /> 
       </div>
     </nav>
   );

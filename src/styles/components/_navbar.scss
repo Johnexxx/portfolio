@@ -1,0 +1,75 @@
+@use '../utils/variables' as navbar;
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    background: rgba(30, 30, 40, 0.7);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    .navbar-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: navbar.$color-primary;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .navbar-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #f3f3f3;
+            font-weight: 500;
+            padding: 0.4rem 1rem;
+            border-radius: 1rem;
+            transition: 
+                color 0.2s,
+                background 0.2s;
+
+            &:hover {
+                color: #fff;
+                background: navbar.$color-primary;
+            }
+        }
+
+        button {
+            margin-left: 1rem;
+        }
+    }
+}
+
+// Light theme support
+body.theme-light .navbar-container {
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+
+    .navbar-logo {
+        color: navbar.$color-primary;
+        text-shadow: none;
+    }
+
+    .navbar-content a {
+        color: #222;
+
+        &:hover {
+            color: #fff;
+            background: navbar.$color-primary;
+        }
+    }
+}
