@@ -6,47 +6,111 @@
   align-items: center;
   justify-content: center;
   padding: 3rem 1rem;
-}
 
-.about-content {
-  max-width: 600px;
-  text-align: center;
-  padding: 2.5rem 2rem;
-  border-radius: 1.5rem;
+  .about-content {
+    max-width: 600px;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
 
-  h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
-    color: about.$color-primary;
-  }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      color: about.$color-primary;
+    }
 
-  p {
-    font-size: 1.15rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-  }
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
 
-  .about-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    .about-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-    li {
-      font-size: 1rem;
-      margin-bottom: 0.7rem;
-      text-align: left;
-      position: relative;
-      padding-left: 1.5rem;
+      li {
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        text-align: left;
+        position: relative;
+        padding-left: 1.5rem;
 
-      &::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: about.$color-primary;
-        font-size: 1.2rem;
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: about.$color-primary;
+          font-size: 1.2rem;
+        }
       }
     }
   }
 }
 
+.about-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center; // Center categories horizontally
 
+  .about-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center each category horizontally
+  }
+
+  .about-category-title {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    color: about.$color-primary;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .about-skills-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center; // Center skill cards horizontally
+  }
+
+  .about-skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    width: 130px;
+    min-height: 130px;
+    padding: 1.2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s, background 0.2s;
+
+    &:hover {
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+      background: rgba(255, 255, 255, 0.18);
+    }
+  }
+
+  .about-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-skill-label {
+    font-size: 1rem;
+    text-align: center;
+    word-break: break-word;
+    width: 100%;
+  }
+}
