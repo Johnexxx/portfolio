@@ -5,7 +5,7 @@ import profile from "../assets/profile.jpg";
 const Contact = () => {
   return (
     <section className="contact-container" id="contact">
-      <div className="contact-content">
+      <div className="contact-content glass-card">
         <h2>Contact</h2>
         <img
           src={profile}
@@ -16,29 +16,36 @@ const Contact = () => {
         <p>Reach out at my socials</p>
         <div className="social-icons">
           <a
-            href="https://facebook.com"
+            href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-              alt="Facebook"
-            />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-              alt="Twitter"
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              alt="GitHub"
             />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
-              alt="Instagram"
+              src="https://cdn-icons-png.flaticon.com/512/733/733561.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a
+            href="mailto:your@email.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              alt="Email"
             />
           </a>
         </div>
